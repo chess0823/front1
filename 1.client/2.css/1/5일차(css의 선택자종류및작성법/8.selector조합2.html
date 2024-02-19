@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.selector종합예제</title>
+    <style>
+    /*         
+        *{color:red}
+            div>strong
+                color:greenyellow;
+                background:rgb(84, 84, 83); 
+                 
+                ul li strong
+                color:aqua;
+                */
+
+            h3,li{/* 태그명 찾기(클래스 선택자와 사용방법이 동일) */
+                color:brown;
+                font-weight:bold; /* 굵게(<b>,<strong>대신에) */
+            }
+            div>div>strong{
+                background: yellow;
+            }
+            ul li strong {
+                color:aqua
+            }
+
+            
+            .information{/* 클래스 선택자 */
+                color:blue;
+            }
+            body.main{
+                background:gray;/* bodydml 배경색 bgcolor ="gray" */
+            }
+            ul#list{
+                background: mistyrose;
+                
+            }
+            h3:first-letter{
+                color:forestgreen
+            }
+            h3:first-line{/* 첫번째 라인 */
+            color:blueviolet
+            }
+            li:hover{
+                background:yellowgreen
+            }
+    </style>
+</head>
+<body class="main">
+    <h3>web programming</h3>
+    <hr>
+    <div> 
+        <div><strong>학습내용</strong></div>
+            <strong>확인</strong>
+            <ul id="list">
+                <li><strong>HTML5</strong></li>
+                <li>CSS</li>
+                <li><strong>JavaScript</strong></li>
+                <ol>
+                    <li>
+                        <strong>JAVA</strong>
+                    </li>
+                </ol>
+            </ul>
+            <div class="information">SQL를 배우는 DB</div>
+    </div>
+</body>
+</html>

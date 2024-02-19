@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.CSS속성단위(1)</title>
+    <!--html4->font-size:23 html에서 사용x font-size:23pt |23px| 23em
+    css에서 사용하는 단위
+    1.절대단위 = cm,mm,pt()
+    2.상대단위=>px모니터상의점의 개수 해상도jpg>gif>png,%,em(vs 차이가 있다
+    
+    기본단위 =>px(글자를 가준)=>
+    상대단위    -->
+    
+<style>
+   div#test{
+   font-size:20px;
+   border:5px dotted green;
+   }
+    div#test >p {
+        font-size:2em;
+        text-decoration:underline;
+        color: red ;
+    }
+    em.t1{
+        color:cyan;
+        text-decoration: overline;
+    }
+    /* 
+        인접한 태그를 가리키는 예약어 +을 사용
+    */
+    p+em{/* p 태그의 인접합 em태그 찾기 */
+        color: red;
+        background: aliceblue;
+    }
+</style>
+
+</head>
+<body>
+    <div>단위 연습</div>
+    <!--div#test{여긴 상위 div}>p{여기는 하위 p요소}-->
+    <div id="test">
+        여긴 상위div
+        <p>여기는 하위p요소</p>
+    </div>
+    <p>여기는 하위p요소2</p>
+    <!--em{여기는 하위 p요소3}*2가로로 생성(인라인계열의 태그)-->
+    <em class="t1">여기는 하위p요소3</em>
+    <em>여기는 하위p요소3</em>
+</body>
+</html>

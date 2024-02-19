@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.while.do-while.구문,html</title>
+</head>
+<body>
+    <script>
+        /* 
+        반복문=>똑같은 문장을 정해진 횟수만큼 계속해서 반복적으로 실행하는 구문
+            =>while,do~while,for문을 이용
+                while,do~while=>반복할 회숫 O or 반복할 횟수X(ex 외부의 파일을 불러오는 경우->파일길이 x)
+                for문=>반복할 횟수O
+            형식)while(조건식)//1)
+                    수행1;//2
+            특징)처음부터 조건식이 거짓=>한번도 수행x,만족하면 수행후 조건체크시 거짓이 될떄까지 반복o
+            do{
+                수행구문;//1)
+            }while{조건식}2)
+            특징)처음부터 조건식이 거짓=>최소 한번은 무조건 수행O,조건체크시 거짓이 될때까지 반복O
+        */
+        
+        /* (1)
+        document.write("while 구문 연습1<br>");
+        document.write("while 구문 연습1<br>");
+        document.write("while 구문 연습1<br>");
+        document.write("while 구문 연습1<br>");
+        document.write("while 구문 연습1<br>");  */
+
+        let i=6;//반복할 횟수 기억할 변수
+        //(2)무한루프=>블럭처리
+        /*
+        while(i<=5){
+            document.write("while구문 연습"+i+"<br>");
+            i++;//i=i+1 i+=1
+        }*/
+        do{
+            document.write("while구문 연습"+i+"<br>");
+            i++;
+        }while(i<=5)//2<=5,3<=5,4<=5,5<=5 6<=5
+        
+        document.write("while구문 종류!!");
+        
+        
+    </script>
+</body>
+</html>

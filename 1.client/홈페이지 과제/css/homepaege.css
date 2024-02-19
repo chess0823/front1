@@ -1,0 +1,26 @@
+.dropdownmenu > li{
+    float:left; /* 왼->오 */
+    position: relative; /* absoulte 크기와 위치가 같기 때문에 맨 마지막 메뉴출력 */
+    background:#67b0d1;
+    width: 11%;
+}
+.dropdownmenu > li > a {
+    display:block; /* 하나의 행을 최대로 사용 */
+    font-size: 16px;
+    color:#120202;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;}
+.dropdownmenu ul{
+     position: absolute;
+    top:-9999px; /* 상단끝에 배치 */
+     /* 추가 */}
+ .dropdownmenu > li:hover{
+     background:#7bbbd7;
+    }
+ .dropdownmenu > li:hover>ul{
+    left:0;
+    top:60px;
+ }
+ul{list-style: none;}/* 마크 삭제 list-style-type:none */
+a {text-decoration: none;} /* 라인이 기본 붙기때문에 지우기 위해 기본적으로 사용 */

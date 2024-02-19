@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-2-.let.const,avr의 차이점.html</title>
+</head>
+<body>
+    <script>
+        /* 
+            const 상수화 시킬때 사용=>React에서 많이 사용
+
+            1)const를 사용할때에는 반드시 상수화된 변수에 초기값을 설정해야 한다.(선언하자마자 값을 저장)
+            2)중간에 값을 변경할 수 가 없다.(상수이기 때문에)
+
+            let.const의 공통점->1)둘다 중복선언 x
+                                        2)블럭내부에 변수를 선언=>블럭내부에서만 사용이 가능하다.
+                                        3)블럭내부의 변수는 외부에서 불러다 사용x(값을 변경or출력x)
+            let,const의 차이점=>값을 변경O or  변경X
+        */
+        let foo;//foo변수 선언(=>데이터를 저장할 공간이 만들어진것)
+        foo=789;//나중에 값을 저장
+        document.write('foo=>'+foo+'<br>');//123
+       
+        const TOO= 123;
+        //TOO=456;
+        document.write('TOO=>'+TOO+'<br>');//브라우저 밖에서 출력
+        //디버깅(debug) ->에러를 잡아주는 작업
+        {
+            const TOO=456;//중복선언x=>똑같은변수 두번생성 x
+            const BAR =456;
+            document.write('BAR=>'+BAR+'<br>');//456
+        }
+        document.write('블럭 밖에서TOO=>'+TOO+'<br>');//789
+        document.write("블럭 밖에서 사용?(BAR=>)"+BAR+'<br>')//X
+    </script>
+</body>
+</html>

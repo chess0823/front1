@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.switch구문(1).html</title>
+</head>
+<body>
+    <script>
+        /* 
+            선택문=>다중if문 대신사용
+            switch(조건식){
+                case 값1(숫자 이거나 문자열):
+                    실행구문1;
+                    break;
+                case 값2(숫자 이거나 문자열):
+                    실행구문2;
+                    ba
+                ...
+                default:
+                    처리구문
+            }
+        */
+       //Uncaught ReferenceError: su is not defined =>su변수를 선언하지 않고 사용할 경우에 발생한 에러메세지
+       //자바스크립트에서 변수를 선언하고 값을 저장시키지 않는 경우 에러발생 ->ndefined(변수에 값이 없어요)초기화x
+      
+      
+       // let su=10;
+      let su =prompt("짝수 홀수 ")
+       
+        
+       /* if(su%2==0)//if (su%2==1) 홀수
+                    document.write(su+"은 짝수입니다."+"<br>");
+                else
+                    document.write(su+"은 홀수입니다."+"<br>");*/
+      
+        switch(su%2){ //조건식(변수의 값체크,수식,특정문자열이나)
+            case 0://csae값(띄어쓰기 주의)
+                document.write(su+"은 짝수입니다.<br>");
+                break;//원하는 다른 항목까지 처리가 된다.
+            case 1://csae 값 (띄어쓰기 주의)
+                document.write(su+"은 홀수입니다.<br>");
+                break;
+        }       
+        document.write("switch 구문 연습종료!!<p>");
+        //추가 변수=(조건식)?참:거짓;
+        let su2=(su%2==0)?"짝수입니다.":"홀수입니다.";
+        document.write("su2=>"+su2);
+       
+        //조건식(변수의 값체크,수식,특정 문자열이거나(변수)
+        
+            
+    </script>
+</body>
+</html>

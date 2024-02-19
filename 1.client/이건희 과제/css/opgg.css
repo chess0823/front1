@@ -1,0 +1,93 @@
+/* 
+파일명:opgg.css
+기능: opgg 웹사이트 모방
+작성자:이건희
+*/
+.dropdownmuenu  > li{
+    position:relative;
+    float:left ;
+    background: rgb(57, 159, 243);  
+    width: 11%;
+}
+.dropdownmuenu>li>a{
+    display:block;/* 하나의 행을 최대로 사용 with.height O*/
+    font-size: 16px;
+    color: #ffffff;
+    text-align:center;
+    height: 60px;/* 100px->60px */
+    line-height: 60px;
+}
+.dropdownmuenu ul{
+    position:absolute;/* left,top,width,height부여 설정 */
+    top:-9999px;
+    /* 추가 */
+    z-index:9999;/* 다른 이미지 슬라이드와 겹치는 경우 맨 앞에 배치 */
+    width:160px;/* 테두리때문에 얼추 160px */
+    border:1px solid #cccccc;
+}
+.dropdownmenu > li:hover{
+    background:#7bbbd7;
+}
+.dropdownmuenu ul a:hover{
+    color:#ffffffff;
+    background: #67b0d1;
+}
+.dropdownmuenu ul li:hover>ul{
+    position:absolute;/* 정확하게 좌표값을 이용해서 하위메뉴를 나오게 설정 */
+    top:0;/* y축은 변화없고 그대로 위치 2단계 메뉴 바로 아래에 화면에 출력(html구조상 */
+    left:100%/* 2단계메뉴의 폭만큼 오른쪽 이동(100%)->3단계폭만큼 오른쪽 이동(4단계)  */
+}
+.img1{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+.img2{
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.img3{
+    position: absolute;
+    top: 110%;  
+    right: 8%;
+    transform: translate(-50%, -50%);
+}
+a {text-decoration:none;}
+ul{
+    list-style-type: none;
+}
+
+.ft1{
+    clear:both;
+    height: 100px;
+    margin:0 auto;
+    position: relative;
+    border:1px solid black;
+    top:1500px;
+}
+.nv3{
+    position: relative;
+    top: 20px;
+}
+.nv3 ul>li{
+    float: left;
+    margin-left: 4.3%;
+}
+.li{
+    padding:10px 0px;
+}
+.nv4{
+    position: relative;
+    top: 40px;
+}
+.nv4 ul{
+    list-style-type: none;
+}
+.nv4 ul>li{
+    float:left;
+    margin-left: 3%;
+    font-size: 11px;
+}

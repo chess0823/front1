@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TripShare::여행정보 공유 사이트</title>
+		<link href="./css/main_cs.css" rel="stylesheet" type="text/css" media="screen and (min-width:768px)">
+		<link href="./css/main_cs2.css" rel="stylesheet" type="text/css" media="screen and (max-width:767px)">
+		<link href="./css/pgwslider.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="js/pgwslider.js"></script>
+
+	</head>
+	<body>
+		<div class="d1">
+		<header>
+			<nav class="n1">
+				<a class="logo" href="main.html"><img src="images/logo.png" width="150px" /></a>
+				<input type="text" name="search_text" placeholder="#canada">&nbsp;&nbsp;<input type="button" value="Search" onclick="">
+			</nav>
+			<nav class="n2">
+				<ul class="menu">
+					<li><a href="#">Asia</a>
+						<ul class="sub1">
+							<li><a href="#">South Korea</a></li>
+							<li><a href="#">Taiwan</a></li>
+							<li><a href="#">Japan</a></li>
+							<li><a href="#">India</a></li>
+							<li><a href="#">Vietnam</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Africa</a>
+						<ul class="sub1">
+							<li><a href="#">Ghana</a></li>
+							<li><a href="#">Nigeria</a></li>
+							<li><a href="#">Sierra Leone</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Europe</a>
+						<ul class="sub1">
+							<li><a href="#">Spain</a></li>
+							<li><a href="#">Greece</a></li>
+							<li><a href="#">Nederland</a></li>
+							<li><a href="#">Finland</a></li>
+							<li><a href="#">Russia</a></li>
+							<li><a href="#">France</a></li>
+							<li><a href="#">Germany</a></li>
+						</ul>
+					</li>
+					<li><a href="#">America</a>
+						<ul class="sub1">
+							<li><a href="#">USA</a></li>
+							<li><a href="#">Canada</a></li>
+							<li><a href="#">Cuba</a></li>
+							<li><a href="#">Brasil</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+		<div id="sliderContainer">
+			<ul class="pgwSlider">
+					<li><img src="images/france.PNG" alt="Paris, France" ></li>
+					<li><img src="images/montreal.PNG" alt="Montreal, Canada" ></li>
+					<li>
+						<img src="images/shanghai.PNG" alt="Shanghai, China" >
+					</li>
+					<li>
+							<img src="images/newyork.PNG" alt="New York, NY, USA">
+					</li>
+			</ul>
+		</div>
+		<article class="a1">
+			<center>
+			<table cellspacing="30px">
+			<tr>
+				<td><a href="#"><img src="images/td1.PNG" ></a> &nbsp; #Canada &nbsp; #rocky mountains<p>&nbsp; #healing &nbsp; #summer &nbsp; #10 days</td>
+				<td><a href="#"><img src="images/td2.PNG" ></a>&nbsp; #Spain &nbsp; #Food &nbsp; #5 days<p>&nbsp; #Madrid &nbsp; #gazpacho &nbsp; #June </td>
+			</tr>
+			<tr>
+				<td><a href="#"><img src="images/td3.PNG" ></a>&nbsp; #Nederland &nbsp; #Zaanse Schans <p>&nbsp; #windmill &nbsp; #July &nbsp; #7 days</td>
+				<td><a href="#"><img src="images/td4.PNG" ></a>&nbsp; #Taiwan &nbsp; #Taipei &nbsp; #101 tower &nbsp; #March <p>&nbsp; #Food &nbsp; #3 days &nbsp; #Beef noodles &nbsp; #Bubble tea </td>
+			</tr>
+			<tr>
+				<td><a href="#"><img src="images/td5.PNG" ></a>&nbsp; #Greece &nbsp; #Santorini <p> &nbsp; #10 days &nbsp; </td>
+				<td><a href="#"><img src="images/td6.PNG" ></a>&nbsp; #Canada &nbsp; #Activity <p>&nbsp; #Ice hockey</td>
+			</tr>
+			</table>
+			</center>
+		</article>
+		<hr>
+		<footer class="ft1">
+			<nav class="n3">
+				<ul class="social_list">
+					<li><a href="#"><img src="images/facebook.png" ></a></li>
+					<li><a href="#"><img src="images/instagram.png" ></a></li>
+					<li><a href="#"><img src="images/twitter.png" ></a></li>
+					<li><a href="#"><img src="images/youtube.png" ></a></li>
+				</ul>
+			</nav>
+			<nav class="n4">
+				<ul>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Legal information</a></li>
+					<li><a href="#">Privacy notice</a></li>
+				</ul>
+			</nav>
+		</footer>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$('.pgwSlider').pgwSlider();
+		});
+		</script>		
+	</body>
+</html>

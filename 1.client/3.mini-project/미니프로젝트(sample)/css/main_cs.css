@@ -1,0 +1,139 @@
+﻿.d1{	/*body 영역*/
+	border:2px solid #aaaaaa; 
+	width:1000px; 
+	height:auto; 
+	margin:0 auto;
+	
+}
+.n1{ /*로고,검색창 부분*/
+	margin:10px 10px;
+}
+.n1 input{
+	position:relative;
+	top:-10px;
+	left:60%;
+}
+body, ul {
+	margin:0;		/* 밖의 여백 */
+	padding:0;	/* 안쪽 여백 */
+}
+.menu > li {
+	float:left;
+	background:#ffcc99;
+	position:relative;
+	width:25%;
+	
+}
+.menu > li:hover{
+	background:#FFCD12;
+}
+.menu > li:hover > ul {
+	opacity:1;
+	visibility: visible;
+	transform : translateY (0);
+	top:60px;
+	left:0;
+}
+.menu ul {
+	position:absolute;
+	opacity:0;
+	visibility:hidden;	/*서브메뉴 숨기기*/
+	/*menu 애니메이션 효과*/
+	transition: .3s ease-in-out;
+	transform : translateY (-20px);
+	z-index:9999;
+	width:250px;
+	border:1px solid #FAECC5;
+}
+
+.menu ul li { position:relative;}
+.menu ul li:hover > ul {
+	position:absolute;
+	top:0;
+	left:100%;
+}
+.menu > li > a{
+	display:block;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:18px;
+	height:60px;
+	line-height:60px;
+	font-family:sans-serif;
+	text-align:center;
+}
+.menu ul a{
+	display:block;
+	color:#aaaaaa;
+	font-size:15px;
+	line-height:40px;
+	background:#ffffff;
+	padding-left:20px;
+}
+.menu ul a:hover{
+	color:#ffffff;
+	background:#ffcc99;
+}
+/*리스트 마커 없애기*/
+ul {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+
+hr {
+	border: solid 10px white;
+}
+/*슬라이더 부분*/
+#sliderContainer {
+	width:1000px;
+	margin: 0 auto;
+	height:500px;
+}
+
+.sc1 > .d2 > h1 {
+	font-family:lobster;
+	font-style:italic;
+	color:#ccffff;
+}
+.d2{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	top:30%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.a1{
+	height:1100px;
+}
+.a1 td img{
+	width:450px; height:250px;
+}
+td{
+	font-weight:bold;
+	font-family:sans-serif;
+	background-color:#ffcc66;
+	width:450px;
+	height:300px;
+}
+.ft1{
+	background:#1294AB;
+	clear:both;
+	height:110px;
+}
+.n3 ul li{
+	float:right;
+	margin:30px 10px;
+}
+.n3 img{
+	width:50px; height:50px;
+}
+.n4 ul li{
+	float:left;
+	margin:30px 30px;
+}
+.n4 a{
+	color:#ffffff;
+}

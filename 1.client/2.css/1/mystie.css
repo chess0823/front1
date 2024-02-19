@@ -1,0 +1,11 @@
+/*
+    2번째 방법
+*/
+body{
+    background-color:linen;
+    color:blueviolet;
+    margin-left:30px;/*왼쪽 여백(바깥쪽)*/
+    margin-left:30px;/*오른족 여백 */
+}
+h3{text-align : center;
+     color:darkred;}/*align= left| center| right -> text-align 사용 o*/

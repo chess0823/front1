@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.Switch구문(3)범위.html</title>
+</head>
+<body>
+    <script>
+        /* 
+        1~10 숫자중에서 짝수,홀소판별 하시오
+        */
+       let su = prompt("1~10까지의 숫자만 입력요망!")
+       su=parseInt(su);//"2"->2
+       switch(su){
+            case 2: case 4: 
+            case 6:  
+            case 8:
+            case 10:
+                document.write(su+"은 짝수입니다.<br>")
+                break
+            case 1: case 3: case 5: case 7: case 9:
+                document.write(su+"홀수입니다<br>")
+            default://if구문의 else if 구문의 맨 마지막 else구문
+                document.write("입력 받을수 있는 값은 1~10까지만<p>")
+                    break;    
+        }
+        documnet.write("Swithch구문 연습종료!!")
+    </script>    
+</body>
+</html>

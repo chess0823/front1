@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.함수작성법2.html</title>
+    <script>
+        //함수 선언=> 함수를 왜 작성?
+        //프로그램을 작성=>단순한 문자이지만 반복적으로 계속 작성해야 되는 구문
+        let x=12;
+        let y=67;
+        
+        if(x>y)
+            document.write("큰값은 "+x+"입니다<br>");
+        else
+            document.write("큰값은"+y+"입니다<br>");
+
+        /* 
+        let a=97;
+        let b=23;
+        
+        if(a>b)
+            document.write("큰값은 "+a+"입니다<br>");
+        else
+            document.write("큰값은"+b+"입니다<br>"); */
+        //big3 함수 작성
+        //let x2=parseInt(x)
+        //let y2=parseInt(y)
+        function big (x,y){
+            if(x>y)
+                 document.write("큰값은 "+x+"입니다<br>");
+            else
+                 document.write("큰값은"+y+"입니다<br>");
+        }
+        //small(x,y)
+        function small (a,b){
+            if(a>b)
+                 document.write("적은값은 "+b+"입니다<br>");
+            else
+                 document.write("적은값은"+a+"입니다<br>");
+        }
+        function small2(a,b){}
+
+        function big2(x,y){
+          if(x>y)
+            return x;
+        else    
+            return y;
+        }
+        function big3 (x,y){//"678","355"=>Integer,parseInt("678")자바=>678
+            if(parseInt(x)>parseInt(y))//자동 변환이 되면 (계산식에 변수가 들어갈때)
+                 document.write("큰값은 "+x+"입니다<br>");
+            else
+                 document.write("큰값은"+y+"입니다<br>");
+        }
+        //
+    </script>
+</head>
+<body>
+    <script>
+        //함수 호출(=call)
+            big(23,56);
+            big(12,98);
+            big(44,65);
+            big(78,90);
+          let b = big2(34500,23987);//반환값이 있는 함수
+          document.write("큰값은"+b+"입니다<br>");
+          small(34,95);
+          big3("678","355");
+    </script>
+</body>
+</html>
